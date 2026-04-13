@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arthur Lanllier — Développeur Full-Stack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-dot" id="cursor-dot"></div>
+
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-a">A</span><span class="logo-l">L</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Accueil</a></li>
+      <li><a href="#about">À propos</a></li>
+      <li><a href="#timeline">Parcours</a></li>
+      <li><a href="#project">Projets</a></li>
+      <li><a href="#veille-tech">Veille</a></li>
+    </ul>
+    <a class="nav-cta" href="Tableau-de-synthèse-Epreuve E4-BTS-SIO-2025-1.pdf" target="_blank" rel="noopener">
+      <span>Tableau de synthèse</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+    <a class="nav-cta" href="cv copie.pdf" target="_blank" rel="noopener">
+      <span>CV</span>
+      <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+    </a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-glow"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal-up">
+        <span class="mono">01 — Introduction</span>
+      </div>
+      <h1 class="hero-name reveal-up delay-1">
+        Arthur<br /><em>Lanllier</em>
+      </h1>
+      <div class="hero-role reveal-up delay-2">
+        <span class="mono">Développeur</span>
+        <div class="role-divider"></div>
+        <span class="mono">Full-Stack Junior</span>
+      </div>
+      <p class="hero-desc reveal-up delay-3">
+        Passionné par la conception d'interfaces et d'APIs modernes.<br />
+        Actuellement <em>Software Engineer</em> chez XEFI, Caen.
+      </p>
+      <div class="hero-actions reveal-up delay-4">
+        <a href="#timeline" class="btn-primary">Découvrir mon parcours</a>
+        <a href="#project" class="btn-ghost">Voir mes projets</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span class="mono">Défiler</span>
+    </div>
+    <div class="hero-badge">
+      <svg class="badge-ring" viewBox="0 0 120 120">
+        <path id="badge-path" d="M 60,60 m -45,0 a 45,45 0 1,1 90,0 a 45,45 0 1,1 -90,0"/>
+        <text>
+          <textPath href="#badge-path" startOffset="0%">BTS SIO · SLAM · 2024/2026 · AFTEC · XEFI · </textPath>
+        </text>
+      </svg>
+      <div class="badge-center">✦</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="about-container">
+      <div class="about-left">
+        <div class="section-label mono reveal-left">02 — À propos</div>
+        <h2 class="about-title reveal-left delay-1">Construire des choses<br /><em>qui ont du sens</em></h2>
+      </div>
+      <div class="about-right">
+        <p class="about-text reveal-right">
+          Je suis Arthur, développeur full-stack junior basé à Caen. Issu d'un cursus littéraire, j'ai choisi de me reconvertir dans l'informatique par passion pour la logique, le design et la résolution de problèmes complexes.
+        </p>
+        <p class="about-text reveal-right delay-1">
+          Aujourd'hui en alternance chez <em>XEFI</em>, je développe des solutions web modernes, de la conception d'APIs RESTful à la création d'interfaces utilisateur soignées.
+        </p>
+        <div class="skills-grid reveal-right delay-2">
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">React / Expo</span><span class="skill-pct mono">80%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Django / Python</span><span class="skill-pct mono">75%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">TypeScript</span><span class="skill-pct mono">70%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:70%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">HTML / CSS</span><span class="skill-pct mono">90%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">SQL / MariaDB</span><span class="skill-pct mono">65%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header"><span class="skill-name">Docker / Réseau</span><span class="skill-pct mono">55%</span></div>
+            <div class="skill-bar"><div class="skill-fill" style="--w:55%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section" id="timeline">
+    <div class="tl-container">
+      <div class="section-label mono reveal-up">03 — Parcours</div>
+      <h2 class="section-title reveal-up delay-1">Mon chemin<br /><em>vers le code</em></h2>
+
+      <div class="timeline">
+        <div class="tl-item reveal-left">
+          <div class="tl-year mono">2019</div>
+          <div class="tl-connector">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-tag mono">Diplôme</div>
+            <h3 class="tl-title">Baccalauréat Littéraire</h3>
+            <p class="tl-desc">Spécialisation en langues, littérature et sciences humaines — une base solide pour aborder la logique et la communication en informatique.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-right delay-1">
+          <div class="tl-year mono">2024</div>
+          <div class="tl-connector">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-tag mono">Formation</div>
+            <h3 class="tl-title">BTS SIO — Option SLAM</h3>
+            <p class="tl-desc">Deux ans de formation intensive en développement d'applications, conception de solutions techniques et architecture réseaux. Centre AFTEC, Caen.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-left delay-2">
+          <div class="tl-year mono">2025</div>
+          <div class="tl-connector">
+            <div class="tl-dot"></div>
+            <div class="tl-line"></div>
+          </div>
+          <div class="tl-card">
+            <div class="tl-tag mono">Stage</div>
+            <h3 class="tl-title">Stage chez XEFI</h3>
+            <p class="tl-desc">Développement d'une application de gestion client. Première expérience professionnelle dans un environnement de production réel.</p>
+          </div>
+        </div>
+
+        <div class="tl-item reveal-right delay-3">
+          <div class="tl-year mono">2025</div>
+          <div class="tl-connector">
+            <div class="tl-dot dot-current"></div>
+          </div>
+          <div class="tl-card card-current">
+            <div class="tl-tag mono tag-current">● En poste</div>
+            <h3 class="tl-title">Software Engineer — XEFI</h3>
+            <p class="tl-desc">Contrat d'apprentissage obtenu suite au stage. Développement full-stack, conception d'interfaces React et d'APIs robustes en environnement professionnel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects-section" id="project">
+    <div class="proj-container">
+      <div class="section-label mono reveal-up">04 — Projets</div>
+      <h2 class="section-title reveal-up delay-1">Ce que<br /><em>j'ai construit</em></h2>
+
+      <div class="projects-grid">
+        <div class="proj-card reveal-up">
+          <div class="proj-img-wrap">
+            <img src="img/pokeball-5128709.jpg" alt="Application Pokémon" loading="lazy" />
+            <div class="proj-overlay">
+              <a href="#" class="proj-link">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-num mono">01</div>
+            <h3 class="proj-title">Application mobile Expo Go</h3>
+            <p class="proj-desc">Jeu de tirage TCG Pokémon développé avec React Native / Expo. Interface mobile, gestion d'état et animations fluides.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Expo</span>
+              <span class="proj-tag">React Native</span>
+              <span class="proj-tag">TypeScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal-up delay-1">
+          <div class="proj-img-wrap">
+            <img src="img/Django.png" alt="Django REST API" loading="lazy" />
+            <div class="proj-overlay">
+              <a href="../pokercard_masters/" class="proj-link">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-num mono">02</div>
+            <h3 class="proj-title">Django REST API</h3>
+            <p class="proj-desc">API RESTful complète pour un jeu TCG Pokémon. Architecture MVC, gestion MariaDB et endpoints documentés.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Django</span>
+              <span class="proj-tag">Python</span>
+              <span class="proj-tag">MariaDB</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal-up delay-2">
+          <div class="proj-img-wrap">
+            <img src="img/Capture d'écran 2025-11-18 à 23.27.30.png" alt="Portfolio Robbie Lens" loading="lazy" />
+            <div class="proj-overlay">
+              <a href="Projets/Robbie-Lens-Photographie-main/" class="proj-link">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-num mono">03</div>
+            <h3 class="proj-title">Portfolio Robbie Lens</h3>
+            <p class="proj-desc">Portfolio sur mesure pour une photographe. Identité visuelle forte, design responsive et expérience utilisateur soignée.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">HTML5</span>
+              <span class="proj-tag">CSS3</span>
+              <span class="proj-tag">JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="proj-card reveal-up delay-3">
+          <div class="proj-img-wrap">
+            <img src="img/Cisco.png" alt="Projet Réseau" loading="lazy" />
+            <div class="proj-overlay">
+              <a href="#" class="proj-link">Voir le projet ↗</a>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-num mono">04</div>
+            <h3 class="proj-title">Plan d'adressage réseau</h3>
+            <p class="proj-desc">Conception d'un plan d'adressage pour entreprise fictive sur Packet Tracer. Simulation d'échanges et routage inter-VLAN.</p>
+            <div class="proj-tags">
+              <span class="proj-tag">Réseau</span>
+              <span class="proj-tag">Packet Tracer</span>
+              <span class="proj-tag">Cisco</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VEILLE -->
+  <section class="veille-section" id="veille-tech">
+    <div class="veille-container">
+      <div class="section-label mono reveal-up">05 — Veille</div>
+      <h2 class="section-title reveal-up delay-1">Rester<br /><em>en mouvement</em></h2>
+      <p class="veille-quote reveal-up delay-2">
+        <em>« La meilleure façon de prédire l'avenir, c'est de l'inventer. »</em>
+        <span class="mono">— Alan Kay</span>
+      </p>
+
+      <div class="veille-grid">
+        <article class="veille-card reveal-up" style="--card-accent:#c9a84c">
+          <div class="veille-img">
+            <img src="img/Capture d'écran 2025-11-23 à 01.23.18.png" alt="Veille techno" loading="lazy" />
+            <div class="veille-cat mono">Veille technologique</div>
+          </div>
+          <div class="veille-body">
+            <span class="veille-date mono">21 Mai 2018</span>
+            <h3 class="veille-title">Qu'est-ce que la veille technologique ?</h3>
+            <p class="veille-desc">Dans les métiers du service, notamment en informatique, la veille est un outil indispensable de mise à niveau et de connaissances.</p>
+            <div class="veille-footer">
+              <a href="https://medium.com/simplon-saint-gaudens/la-veille-technologique-5930f34235b2" target="_blank" class="veille-link">Lire l'article <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+              <div class="veille-stats mono"><span>👁️ 1.2k</span><span>💬 11</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="veille-card reveal-up delay-1" style="--card-accent:#5b8dee">
+          <div class="veille-img">
+            <img src="img/Capture d'écran 2025-11-23 à 01.24.21.png" alt="TypeScript" loading="lazy" />
+            <div class="veille-cat mono">Langages</div>
+          </div>
+          <div class="veille-body">
+            <span class="veille-date mono">28 Août 2024</span>
+            <h3 class="veille-title">TypeScript : nouvelle mode ou incontournable ?</h3>
+            <p class="veille-desc">TypeScript est devenu un standard en 2025 pour tout développeur souhaitant produire du code fiable et maintenable dans l'écosystème JS.</p>
+            <div class="veille-footer">
+              <a href="https://dev.to/homayounmmdy/why-you-should-use-typescript-for-medium-or-larger-projects-30g9" target="_blank" class="veille-link">Lire l'article <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+              <div class="veille-stats mono"><span>👁️ 890</span><span>💬 6</span></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="veille-card reveal-up delay-2" style="--card-accent:#e07b54">
+          <div class="veille-img">
+            <img src="img/dribbles.png" alt="UI/UX Design" loading="lazy" />
+            <div class="veille-cat mono">Design UI/UX</div>
+          </div>
+          <div class="veille-body">
+            <span class="veille-date mono">15 Novembre 2025</span>
+            <h3 class="veille-title">La veille UI/UX facile à appliquer</h3>
+            <p class="veille-desc">Ressources et inspirations pour rester à jour sur les tendances du design d'interface et offrir des expériences mémorables.</p>
+            <div class="veille-footer">
+              <a href="https://dribbble.com/stories" target="_blank" class="veille-link">Lire l'article <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M1 11L11 1M11 1H3M11 1V9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></a>
+              <div class="veille-stats mono"><span>👁️ 2.1k</span><span>💬 56</span></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">Arthur Lanllier</div>
+        <p class="footer-tagline mono">Développeur Full-Stack · Caen, 14000</p>
+      </div>
+      <div class="footer-links">
+        <a href="mailto:lanllierarthur@gmail.com" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><rect x="1" y="3" width="16" height="12" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 6L9 11L17 6" stroke="currentColor" stroke-width="1.5"/></svg>
+          lanllierarthur@gmail.com
+        </a>
+        <a href="https://www.linkedin.com/in/arthur-lanllier-2b9389222/" target="_blank" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><rect x="1" y="1" width="16" height="16" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M5 7V13M5 5V5.1M9 13V10C9 8.343 10.343 7 12 7C13.657 7 15 8.343 15 10V13M9 7V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Agarthaxx" target="_blank" class="footer-link">
+          <svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M9 1C4.58 1 1 4.58 1 9C1 12.54 3.29 15.53 6.47 16.59C6.87 16.66 7.02 16.42 7.02 16.21C7.02 16.02 7.01 15.39 7.01 14.72C5 15.09 4.48 14.23 4.32 13.78C4.23 13.55 3.84 12.84 3.5 12.65C3.22 12.5 2.82 12.13 3.49 12.12C4.12 12.11 4.57 12.7 4.72 12.94C5.44 14.15 6.59 13.81 7.05 13.6C7.12 13.08 7.33 12.73 7.56 12.53C5.78 12.33 3.92 11.64 3.92 8.58C3.92 7.71 4.23 6.99 4.74 6.43C4.66 6.23 4.38 5.41 4.82 4.31C4.82 4.31 5.49 4.1 7.02 5.13C7.66 4.95 8.34 4.86 9.02 4.86C9.7 4.86 10.38 4.95 11.02 5.13C12.55 4.09 13.22 4.31 13.22 4.31C13.66 5.41 13.38 6.23 13.3 6.43C13.81 6.99 14.12 7.7 14.12 8.58C14.12 11.65 12.25 12.33 10.47 12.53C10.76 12.78 11.01 13.26 11.01 14.01C11.01 15.08 11 15.95 11 16.21C11 16.42 11.15 16.67 11.55 16.59C14.71 15.53 17 12.53 17 9C17 4.58 13.42 1 9 1Z" fill="currentColor"/></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="mono">© 2025 Arthur Lanllier — Tous droits réservés</span>
+      <a href="tableau.pdf" target="_blank" class="mono footer-pdf">Tableau de synthèse BTS SIO ↗</a>
+    </div>
+  </footer>
+
+  <script>
+  // Cursor
+  const cursor = document.getElementById('cursor');
+  const dot = document.getElementById('cursor-dot');
+  let mx = 0, my = 0, cx = 0, cy = 0;
+  document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; dot.style.transform = `translate(${mx}px,${my}px)`; });
+  function animCursor() { cx += (mx-cx)*0.12; cy += (my-cy)*0.12; cursor.style.transform = `translate(${cx}px,${cy}px)`; requestAnimationFrame(animCursor); }
+  animCursor();
+  document.querySelectorAll('a,button,.proj-card,.veille-card,.tl-card').forEach(el => {
+    el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+    el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+  });
+
+  // Nav scroll
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const t = document.querySelector(a.getAttribute('href'));
+      if(t) t.scrollIntoView({ behavior:'smooth', block:'start' });
+    });
+  });
+
+  // Intersection observer for reveals
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) { entry.target.classList.add('visible'); io.unobserve(entry.target); }
+    });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  document.querySelectorAll('.reveal-up,.reveal-left,.reveal-right').forEach(el => io.observe(el));
+
+  // Skill bars animate when visible
+  const skillIo = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.querySelectorAll('.skill-fill').forEach(fill => fill.classList.add('animate'));
+        skillIo.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  document.querySelectorAll('.skills-grid').forEach(el => skillIo.observe(el));
+
+  // Badge rotation
+  const badge = document.querySelector('.badge-ring');
+  if(badge) { let r=0; setInterval(() => { r+=0.3; badge.style.transform=`rotate(${r}deg)`; },16); }
+  </script>
+</body>
+</html>
