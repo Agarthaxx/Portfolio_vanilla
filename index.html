@@ -566,150 +566,124 @@
   </div>
 
   <!-- ===== MODAL BTS ===== -->
-  <div class="proj-modal-backdrop" id="btsModal">
-    <div class="proj-modal">
-      <button class="proj-modal-close" id="btsModalClose" aria-label="Fermer">
-        <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-          <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
-        </svg>
-      </button>
-      <div class="proj-modal-header" style="padding-top:2rem">
-        <span class="proj-modal-num mono">03 — FORMATION</span>
-        <h3 class="proj-modal-title">BTS SIO — Option SLAM</h3>
-        <p class="proj-modal-subtitle mono">AFTEC Caen · 2024 / 2026</p>
-      </div>
-      <div class="proj-modal-body">
-        <!-- Durée / Organisation -->
-        <div class="proj-modal-details" style="margin-top:1.5rem">
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Durée</span>
-            <span class="detail-val">2 ans post-bac — Bac+2 (niveau 5 RNCP)</span>
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Rythme</span>
-            <span class="detail-val">Alternance — 2 jours école / 3 jours entreprise</span>
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Épreuves</span>
-            <span class="detail-val">E4 (support & services) · E5 (patrimoine pro) · E6 (cybersécurité)</span>
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Option</span>
-            <span class="detail-val">SLAM — Solutions Logicielles et Applications Métiers</span>
-          </div>
-          <div class="proj-modal-detail-row">
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Centre</span>
-            <span class="detail-val">AFTEC, Caen (14)</span>
-          </div>
-        </div>
-        <div class="proj-modal-details">
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Mention</span>
-            <span class="detail-val">Bien — 15.2/20</span>
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Option</span>
-            <span class="detail-val">SLAM — Solutions Logicielles et Applications Métiers</span>
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Centre</span>
-            <span class="detail-val">AFTEC, Caen (14)</span>
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Durée</span>
-            <span class="detail-val">2 ans · 2024 – 2026</span>
-          </div>
-          <div class="proj-modal-detail-row">
-            <span class="detail-label mono">Matières</span>
-            <span class="detail-val">Dev. applicatif · BDD · Réseaux · Cybersécurité · Projet E6</span>
-          </div>
+  <!-- ===== MODAL BTS ===== -->
+<div class="proj-modal-backdrop" id="btsModal">
+  <div class="proj-modal">
 
+    <button class="proj-modal-close" id="btsModalClose" aria-label="Fermer">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
+        <path d="M1 1l12 12M13 1L1 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <!-- En-tête -->
+    <div class="proj-modal-header" style="padding-top: 2rem;">
+      <span class="proj-modal-num mono">03 — Formation</span>
+      <h3 class="proj-modal-title">BTS SIO — Option SLAM</h3>
+      <p class="proj-modal-subtitle mono">AFTEC Caen · 2024 / 2026</p>
+    </div>
+
+    <div class="proj-modal-body">
+
+      <!-- Méta-infos condensées en grille 2 colonnes -->
+      <div class="proj-modal-details">
+        <div class="proj-modal-detail-row">
+          <span class="detail-label mono">Niveau</span>
+          <span class="detail-val">Bac+2 — RNCP niveau 5</span>
         </div>
-        <div class="proj-modal-desc-block">
-          <p class="proj-modal-desc">
-            Le BTS SIO (Services Informatiques aux Organisations) est un diplôme national de niveau Bac+2
-            préparé en deux ans, accessible après le baccalauréat. Il forme des techniciens capables de
-            répondre aux besoins informatiques des entreprises, que ce soit en développement logiciel
-            ou en gestion d'infrastructure réseau. La formation se découpe en deux options distinctes :
-            <strong>SLAM</strong> et <strong>SISR</strong>.
+        <div class="proj-modal-detail-row">
+          <span class="detail-label mono">Rythme</span>
+          <span class="detail-val">2 j école · 3 j entreprise</span>
+        </div>
+        <div class="proj-modal-detail-row">
+          <span class="detail-label mono">Centre</span>
+          <span class="detail-val">AFTEC, Caen (14)</span>
+        </div>
+        <div class="proj-modal-detail-row">
+          <span class="detail-label mono">Épreuves</span>
+          <span class="detail-val">E4 · E5 · E6 (cybersécurité)</span>
+        </div>
+        <div class="proj-modal-detail-row">
+          <span class="detail-label mono">Matières</span>
+          <span class="detail-val">Dev. applicatif · Base de données · Réseaux ·</span>
+        </div>
+      </div>
+
+      <!-- Description courte -->
+      <p class="proj-modal-desc">
+        Le BTS SIO forme des techniciens capables de répondre aux besoins
+        informatiques des organisations — développement logiciel ou gestion
+        d'infrastructure. Deux spécialités distinctes, deux métiers différents.
+      </p>
+
+      <!-- Comparatif SLAM / SISR -->
+      <div class="options-grid">
+
+        <div class="option-card option-slam active-option">
+          <img src="img/slam-icon.png" alt="Option SLAM" class="option-img" loading="lazy" />
+          <span class="option-badge mono">✦ Ma formation</span>
+          <h5>Option SLAM</h5>
+          <p>
+            Concevoir, coder, tester et déployer des applications web, mobiles
+            ou métier. Maîtrise des langages (Python, JS, SQL), des frameworks
+            modernes, des APIs REST et de Git en contexte agile.
           </p>
-
-          <!-- Options côte à côte -->
-          <div class="options-grid">
-
-            <div class="option-card option-slam active-option">
-              <img src="img/slam-icon.png" alt="Option SLAM" class="option-img" loading="lazy">
-              <span class="option-badge mono">Ma formation</span>
-              <h5>Option SLAM</h5>
-              <p>
-                La spécialité <strong>Solutions Logicielles et Applications Métiers</strong> forme des
-                développeurs capables de concevoir, coder, tester et déployer des applications web,
-                mobiles ou métier. L'accent est mis sur la maîtrise des langages de programmation
-                (Python, JavaScript, SQL), la modélisation de bases de données, la conception
-                d'algorithmes et la gestion de projets agiles. On apprend à travailler avec des
-                frameworks modernes, des APIs REST et des outils de versioning comme Git.
-              </p>
-              <div class="option-debouches">
-                <span class="detail-label mono">Débouchés</span>
-                <ul>
-                  <li>Développeur web / full-stack</li>
-                  <li>Analyste-programmeur</li>
-                  <li>Intégrateur d'applications</li>
-                  <li>Concepteur de logiciels</li>
-                  <li>Poursuite : Licence Pro, Bachelor, BUT Informatique</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="option-card option-sisr">
-              <img src="img/sisr-icon.png" alt="Option SISR" class="option-img" loading="lazy">
-              <h5>Option SISR</h5>
-              <p>
-                La spécialité <strong>Solutions d'Infrastructure, Systèmes et Réseaux</strong> forme
-                des techniciens spécialisés dans la gestion et la sécurisation des infrastructures
-                informatiques. Elle couvre l'administration des serveurs (Windows Server, Linux),
-                la configuration des équipements réseaux (routeurs, switches, firewalls), la
-                virtualisation, ainsi que la cybersécurité. L'objectif est de garantir la
-                disponibilité, la performance et la sécurité des systèmes d'information d'une
-                organisation.
-              </p>
-              <div class="option-debouches">
-                <span class="detail-label mono">Débouchés</span>
-                <ul>
-                  <li>Administrateur systèmes & réseaux</li>
-                  <li>Technicien cybersécurité</li>
-                  <li>Responsable infrastructure</li>
-                  <li>Support informatique N2/N3</li>
-                  <li>Poursuite : Licence Pro Réseaux, Bachelor Cybersécurité</li>
-                </ul>
-              </div>
-            </div>
-
+          <div class="option-debouches">
+            <span class="detail-label mono">Débouchés</span>
+            <ul>
+              <li>Développeur web / full-stack</li>
+              <li>Analyste-programmeur</li>
+              <li>Concepteur de logiciels</li>
+              <li>Poursuite : Bachelor, BUT, Licence Pro</li>
+            </ul>
           </div>
         </div>
 
-        <div class="proj-modal-tags">
-          <span class="proj-tag">Python</span>
-          <span class="proj-tag">JavaScript</span>
-          <span class="proj-tag">SQL</span>
-          <span class="proj-tag">Réseaux</span>
-          <span class="proj-tag">Cybersécurité</span>
-          <span class="proj-tag">Algorithmique</span>
+        <div class="option-card option-sisr">
+          <img src="img/sisr-icon.png" alt="Option SISR" class="option-img" loading="lazy" />
+          <h5>Option SISR</h5>
+          <p>
+            Administrer et sécuriser les infrastructures informatiques.
+            Serveurs (Windows / Linux), routeurs, switches, firewalls,
+            virtualisation et cybersécurité.
+          </p>
+          <div class="option-debouches">
+            <span class="detail-label mono">Débouchés</span>
+            <ul>
+              <li>Administrateur systèmes & réseaux</li>
+              <li>Technicien cybersécurité</li>
+              <li>Support informatique N2 / N3</li>
+              <li>Poursuite : Bachelor Cyber, Licence Pro Réseaux</li>
+            </ul>
+          </div>
         </div>
-        <div class="proj-modal-actions" style="padding-top:.6rem;border-top:1px solid var(--border2)">
-          <a href="folder/Tableau-de-synthèse-Epreuve E4-BTS-SIO-2025-3.pdf" target="_blank" rel="noopener"
-            class="modal-btn-primary">
-            Tableau de synthèse ↗
-          </a>
-          <a href="folder/Cv.pdf" target="_blank" rel="noopener" class="modal-btn-ghost">
-            Mon CV ↗
-          </a>
-        </div>
+
       </div>
+
+      <!-- Tags -->
+      <div class="proj-modal-tags">
+        <span class="proj-tag">Python</span>
+        <span class="proj-tag">JavaScript</span>
+        <span class="proj-tag">SQL</span>
+        <span class="proj-tag">Réseaux</span>
+        <span class="proj-tag">Cybersécurité</span>
+        <span class="proj-tag">Algorithmique</span>
+      </div>
+
+      <!-- Actions -->
+      <div class="proj-modal-actions" style="padding-top: .6rem; border-top: 1px solid var(--border2);">
+        <a href="folder/Tableau-de-synthèse-Epreuve E4-BTS-SIO-2025-3.pdf"
+           target="_blank" rel="noopener" class="modal-btn-primary">
+          Tableau de synthèse ↗
+        </a>
+        <a href="folder/Cv.pdf" target="_blank" rel="noopener" class="modal-btn-ghost">
+          Mon CV ↗
+        </a>
+      </div>
+
     </div>
   </div>
+</div>
   <!-- ===== MODAL VEILLE ===== -->
   <div class="veille-modal-backdrop" id="veilleModal">
     <div class="veille-modal">

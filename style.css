@@ -2802,21 +2802,117 @@ nav.scrolled {
   }
 }
 
+/* ===== OPTIONS GRID ===== */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.6rem;
+}
 
+.option-card {
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 1.4rem 1.3rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
 
+.option-card .option-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  opacity: 0.8;
+  margin-bottom: 0.3rem;
+}
 
+.option-card h5 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0.1rem 0 0.3rem;
+}
 
+.option-card p {
+  font-size: 0.85rem;
+  line-height: 1.72;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Carte active (SLAM) */
 .option-slam.active-option {
-  border-color: var(--gold);
-  box-shadow: 0 0 16px rgba(201, 168, 76, 0.15);
+  border-color: rgba(201, 168, 76, 0.4);
+  background: linear-gradient(150deg, rgba(201, 168, 76, 0.07) 0%, var(--bg3) 65%);
+  box-shadow:
+    0 0 0 1px rgba(201, 168, 76, 0.1),
+    0 8px 28px rgba(0, 0, 0, 0.22);
 }
-.option-badge {
-  display: inline-block; background: var(--gold-dim); color: var(--gold);
-  border: 1px solid var(--gold); border-radius: 4px;
-  font-size: 0.7rem; padding: 2px 8px; margin-bottom: 0.5rem;
-}
-.option-debouches { margin-top: 0.8rem; border-top: 1px solid var(--border2); padding-top: 0.8rem; }
-.option-debouches ul { list-style: none; padding: 0; margin: 0.4rem 0 0; font-size: 0.85rem; }
-.option-debouches li::before { content: "→ "; color: var(--gold); }
-.option-card p { font-size: 0.9rem; line-height: 1.6; color: var(--text-muted, #aaa); }
 
+/* Badge "Ma formation" */
+.option-badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: rgba(201, 168, 76, 0.1);
+  color: var(--gold);
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  border-radius: 4px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.63rem;
+  letter-spacing: 0.07em;
+  padding: 0.22rem 0.65rem;
+  margin-bottom: 0.15rem;
+}
+
+/* Débouchés */
+.option-debouches {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--border2);
+}
+
+.option-debouches .detail-label {
+  display: block;
+  font-size: 0.64rem;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.option-debouches ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+}
+
+.option-debouches li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.option-debouches li::before {
+  content: "→";
+  color: var(--gold);
+  font-size: 0.72rem;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .options-grid {
+    grid-template-columns: 1fr;
+  }
+}
